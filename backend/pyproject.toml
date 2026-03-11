@@ -1,0 +1,30 @@
+[project]
+name = "medibot-backend"
+version = "0.1.0"
+description = "FastAPI backend for RAG-based medical chatbot"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "python-dotenv",
+    "python-multipart",
+    "sentence-transformers",
+    "langchain",
+    "langchain-community",
+    "langchain-groq",
+    "langchain-huggingface",
+    "chromadb",
+    "pydantic>=2",
+    "pypdf",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.scripts]
+dev = "uvicorn api:app --reload --host 0.0.0.0 --port 8000"

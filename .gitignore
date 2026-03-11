@@ -1,0 +1,24 @@
+# Node / Next.js
+node_modules/
+frontend/.next/
+frontend/out/
+
+# Python / backend
+backend/.venv/
+backend/__pycache__/
+backend/.pytest_cache/
+backend/.mypy_cache/
+
+# Environment files
+backend/.env
+backend/.env.*
+
+# OS / editor
+.DS_Store
+*.log
+.idea/
+.vscode/
+
+# UV / cache
+.uv/
+
